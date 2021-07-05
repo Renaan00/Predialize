@@ -1,0 +1,39 @@
+.header-card {
+    width: 79vw;
+    height: 7vh;
+    margin: 20px 10px 20px 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-card button {
+    color:#2a2ca5;
+}
+.header-card .header-title {
+    font-weight: 200;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+.box-card {
+    width : 16.6vw;
+    display: inline-block;
+    margin: 14px;
+}
+.box-card .box-title {
+    display: flex;
+    justify-content: flex-start;
+}
+.box-card img {
+    height: 14vw;
+}
+.box-card .title {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.box-button {
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-button button:nth-child(2) {
+    color: #fff;
+    background-color:#2a2ca5;
+} 

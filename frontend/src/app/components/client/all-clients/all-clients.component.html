@@ -1,0 +1,31 @@
+<app-totals></app-totals>
+<mat-card class="header-card">
+    <div class="section-card">
+        <mat-card-title class="header-title">
+            Todos os clientes
+        </mat-card-title>
+        <mat-card-subtitle class="header-subtitle">
+            Veja todos os clientes e descrições
+        </mat-card-subtitle>
+    </div>
+    <button mat-button routerLink="/client/name">PESQUISAR POR NOME</button>
+</mat-card>
+<mat-card class="box-card" *ngFor="let client of clients">
+    <mat-card-header class="box-title">
+        <mat-card-title class="title">{{ client.name }}</mat-card-title>
+        <mat-card-subtitle>Id: {{ client._id }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ client.image_src }}">
+    <mat-card-content>
+        <p>
+            Empreendimentos: {{ client.total_enterprises }}
+        </p>
+        <p>
+            Imóveis: {{ client.total_realties }}
+        </p>
+    </mat-card-content>
+    <mat-card-actions class="box-button">
+        <button mat-button color="primary" routerLink="/client/{{ client._id }}">VISUALIZAR</button>
+        <button mat-button routerLink="/cliente/{{ client._id }}/detalhes">DETALHES</button>
+    </mat-card-actions>
+</mat-card>

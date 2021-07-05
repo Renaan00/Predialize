@@ -1,0 +1,24 @@
+.box-card {
+    width : 16.6vw;
+    display: inline-block;
+    margin: 14px;
+}
+.box-card .box-title {
+    display: flex;
+    justify-content: flex-start;
+}
+.box-card img {
+    height: 14vw;
+}
+.box-card .title {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.box-button {
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-button button:nth-child(2) {
+    color: #fff;
+    background-color:#2a2ca5;
+} 

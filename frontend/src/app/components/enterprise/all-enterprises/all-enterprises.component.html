@@ -1,0 +1,29 @@
+<mat-card class="header-card">
+    <div class="section-card">
+        <mat-card-title class="header-title">
+            Todos os empreendimentos
+        </mat-card-title>
+        <mat-card-subtitle class="header-subtitle">
+            Veja todos os empreendimentos e descrições
+        </mat-card-subtitle>
+    </div>
+    <button mat-button routerLink="/enterprise/name">PESQUISAR POR NOME</button>
+</mat-card>
+<mat-card class="box-card" *ngFor="let enterprise of enterprises">
+    <mat-card-header class="box-title">
+        <mat-card-title class="title">{{ enterprise.name }}</mat-card-title>
+        <mat-card-subtitle>Id: {{ enterprise._id }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ enterprise.image_src }}">
+    <mat-card-content>
+        <p>
+            Companhia: {{ enterprise.company_name }}
+        </p>
+        <p>
+            Imóveis: {{ enterprise.realties }}
+        </p>
+    </mat-card-content>
+    <mat-card-actions class="box-button">
+        <button mat-button color="primary" routerLink="">VOLTAR</button>
+    </mat-card-actions>
+</mat-card>

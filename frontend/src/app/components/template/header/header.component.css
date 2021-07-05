@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+#logo-header {
+    width: 11vw;
+}
+#text-header {
+    font-weight: 200;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+#github-logo {
+    width: 2.5vw;
+}

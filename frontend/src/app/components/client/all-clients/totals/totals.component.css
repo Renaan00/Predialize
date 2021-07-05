@@ -1,0 +1,31 @@
+.container-totals {
+    display: flex;
+    justify-content: space-between;
+}
+.box-card {
+    margin: 0px 14px 0px 14px;
+    width: 24vw;
+    height: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+}
+.box-card:nth-child(1) {
+    background-color: #2a2ca5;
+}
+.box-card:nth-child(2) {
+    background-color: #4b2aa5;
+}
+.box-card:nth-child(3) {
+    background-color: #742aa5;
+}
+.box-card .title,
+.box-card .subtitle {
+    color: #fff !important;
+}
+.box-card .title {
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}

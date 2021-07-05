@@ -1,0 +1,21 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav class="sidenav" mode="side" opened relativeInViewport="true">
+        <mat-nav-list>
+            <a mat-list-item routerLink="">
+                <i class="material-icons">home</i>
+                Início
+            </a>
+            <a mat-list-item routerLink="/clients">
+                <i class="material-icons">people</i>
+                Clientes
+            </a>
+            <a mat-list-item routerLink="/enterprises">
+                <i class="material-icons">apartment</i>
+                Empreendimentos
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,15 @@
+.header-card {
+    width: 79vw;
+    height: 7vh;
+    margin: 20px 10px 20px 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-card button {
+    color:#2a2ca5;
+}
+.header-card .header-title {
+    font-weight: 200;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}

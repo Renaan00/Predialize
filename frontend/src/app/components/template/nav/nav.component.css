@@ -1,0 +1,16 @@
+.sidenav-container {
+    min-height: 100vh;
+}
+.sidenav {
+    background-color: #2a2ca5;
+    width: 14vw;
+}
+.sidenav a {
+    color: #fff;
+}
+.sidenav i {
+    margin-right: 10px;
+}
+.content {
+    padding: 10px;
+}

@@ -1,0 +1,30 @@
+<mat-card class="form">
+    <mat-card-title class="box-title">Nome do empreendimento</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="name" (input)="getEnterpriseName()" name="name">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button routerLink="/enterprises">
+        VOLTAR
+    </button>
+</mat-card>
+<mat-card-title class="message-error">{{ error }}</mat-card-title>
+<mat-card class="box-card" *ngFor="let enterprisename of enterpriseName">
+    <mat-card-header class="box-title">
+        <mat-card-title class="title">{{ enterprisename.name }}</mat-card-title>
+        <mat-card-subtitle>Id: {{ enterprisename._id }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ enterprisename.image_src }}">
+    <mat-card-content>
+        <p>
+            Companhia: {{ enterprisename.company_name }}
+        </p>
+        <p>
+            Imóveis: {{ enterprisename.realties }}
+        </p>
+    </mat-card-content>
+    <mat-card-actions class="box-button">
+        <button mat-button routerLink="/enterprises">VOLTAR</button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,31 @@
+<mat-card class="form">
+    <mat-card-title class="box-title">Nome do cliente</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="name" (input)="getClientName()" name="name">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button routerLink="/clients">
+        VOLTAR
+    </button>
+</mat-card>
+<mat-card-title class="message-error">{{ error }}</mat-card-title>
+<mat-card class="box-card" *ngFor="let clientname of clientName">
+    <mat-card-header class="box-title">
+        <mat-card-title class="title">{{ clientname.name }}</mat-card-title>
+        <mat-card-subtitle>Id: {{ clientname._id }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ clientname.image_src }}">
+    <mat-card-content>
+        <p>
+            Empreendimentos: {{ clientname.total_enterprises }}
+        </p>
+        <p>
+            Imóveis: {{ clientname.total_realties }}
+        </p>
+    </mat-card-content>
+    <mat-card-actions class="box-button">
+        <button mat-button color="primary" routerLink="/client/{{ clientname._id }}">VISUALIZAR</button>
+        <button mat-button routerLink="/cliente/{{ clientname._id }}/detalhes">DETALHES</button>
+    </mat-card-actions>
+</mat-card>

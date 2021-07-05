@@ -1,0 +1,14 @@
+<div class="container-totals" *ngFor="let total of totals">
+    <mat-card class="box-card">
+        <mat-card-title class="title">{{ total.total_clients }}</mat-card-title>
+        <mat-card-subtitle class="subtitle">Total de clientes</mat-card-subtitle>
+    </mat-card>
+    <mat-card class="box-card">
+        <mat-card-title class="title">{{ total.total_enterprises }}</mat-card-title>
+        <mat-card-subtitle class="subtitle">Total de empreendimentos</mat-card-subtitle>
+    </mat-card>
+    <mat-card class="box-card">
+        <mat-card-title class="title">{{ total.total_realties }}</mat-card-title>
+        <mat-card-subtitle class="subtitle">Total de imóveis</mat-card-subtitle>
+    </mat-card>
+</div>
